@@ -1,0 +1,186 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+
+}
+
+.header{
+	min-height:100vh;
+	width:100%;
+	background-image:url(../images/emirates_background.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+
+}
+
+#navBar{
+	display:flex;
+	height:10vh;
+	width:98.7vw;
+	background:#000000;
+	box-shadow:rgba(0,0,0,0.7)1px 2px 3px;
+	
+}
+#navBar a{
+	color:#fff;
+	padding:2.7vh 7vw;
+	text-decoration:none;
+	font-size:21px;
+	justify-content:space-between;
+}
+.booking{
+	margin-top:2vh;
+	height:6vh;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-left:8vw;
+    background-color: #eb4034;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s ease;
+    text-align:center;
+    border-radius:2.5vw;
+}
+
+.booking:hover{
+	background-color: #000;
+	border:1px solid red;
+	transition:3s;
+}
+
+.header h1{
+	font-weight:bold;
+	padding-top:1vh;
+	font-size:50px;
+	color:#fff;
+	text-align:center;
+	margin-right:79vw;
+	transform:rotate(0deg);
+
+}
+.airport{
+	display:flex;
+}
+
+.from{
+  margin-top:20vh;
+  margin-left: 30vw;
+  border: none;
+  font-size: inherit;
+  transition: width 200ms;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 250px;
+  color: #000;
+  background-color:#fff;
+  border:1px solid #fff;
+}
+::placeholder{
+	color:#000;
+}
+.to{
+  margin-top:20vh;
+  margin-left: 1vw;
+  border: none;
+  font-size: inherit;
+  transition: width 200ms;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 250px;
+  color: #000;
+  background-color:#fff;
+  border:1px solid #fff;
+}
+.date{
+	display:flex;
+}
+.departure{
+  margin-top:10vh;
+  margin-left: 30vw;
+  border: none;
+  font-size: inherit;
+  transition: width 200ms;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 250px;
+  color: #000;
+  background-color:#fff;
+  border:1px solid #fff;
+}
+.arrival{
+  margin-top:10vh;
+  margin-left:1vw;
+  border: none;
+  font-size: inherit;
+  transition: width 200ms;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 250px;
+  color: #000;
+  background-color:#fff;
+  border:1px solid #fff;
+}
+label{
+	margin-left:30.1vw;
+	color:#fff; 
+	font-size:25px;
+}
+.label{
+	display: flex;
+}
+p label{
+	color:#fff;
+	margin-left:12.1vw;
+}
+@media only screen and (max-width:700px){
+	.airport{
+		display:block;
+	}
+	
+	.from{
+		margin-left:22vw;
+	}
+	.to{
+		margin-left:22vw;
+		margin-top:5vh;
+	}
+	.date{
+		display:block;
+		margin-left:20vw;
+	}
+	.departure{
+
+		margin-left:1vw;
+	}
+	.departure_date{
+		margin-left:20vw;
+	}
+	nav .fa-bars{
+		display:block;
+		position:fixed;
+		top:4%;
+		right:7%;
+		color:#000;
+		font-size:28px;
+	}
+	.active::after{
+		left:-40px;
+		transform:translate(0,50%);
+		bottom:60%;
+		border-radius:2px;
+	}
+	.hidemenu{
+		max-height:300px;
+
+	}
+
+
+
+
+}
